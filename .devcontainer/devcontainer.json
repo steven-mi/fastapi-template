@@ -1,0 +1,23 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/python:3.10",
+	"features": {	
+        "ghcr.io/devcontainers-contrib/features/poetry:2": {
+            "version": "1.7.1"
+        },
+		"ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/install.sh",
+	"containerEnv": {},
+	"customizations":{
+        "vscode": {
+            "extensions":[
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
+            }
+        }
+    }
+}
