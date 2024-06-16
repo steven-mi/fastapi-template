@@ -1,17 +1,31 @@
 # FastAPI Template
 
-This template enables you to easily bootstrap a FastAPI project. The template contains:
-- FastAPI
-- Poetry
-- GitHub Action for CICD
-- Devcontainer
-- Linter and others
+FastAPI template to easily bootstrap a project. The template contains:
+
+- Simple FastAPI Application
+- Poetry for Dependency Management
+- GitHub Action for CI
+- Ruff as Python Linter
+- Devcontainer for development environment
 
 ## Getting Started
 
 ### Start FastAPI Application
+
 ```
 uvicorn src.main:app  --reload 
+```
+
+### Format Files
+
+```
+black .
+```
+
+### Linter
+
+```
+ruff check
 ```
 
 ## TODOs
